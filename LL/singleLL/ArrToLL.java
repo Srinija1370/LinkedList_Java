@@ -130,6 +130,7 @@ public class ArrToLL{
         return head;
     }
     public static Node Insertposition(Node head,int ele,int k){
+        System.out.print("Insert at Position "+k+": ");
         if(head == null){
             if(k == 1){
                 return new Node(ele);
@@ -156,6 +157,7 @@ public class ArrToLL{
         return head;
     }
     public static Node InsertBeforeValue(Node head,int ele,int val){
+        System.out.print("Insert before "+val+": ");
         if(head == null)
             return null;
         if(val == head.data){
